@@ -71,4 +71,22 @@ class RomanNumralsConverterTest {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("LXXXIX", converter.convert(89));
     }
+    
+    @Test
+    public void convertNintyToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("XC", converter.convert(90));
+    }
+    
+    @Test
+    public void convertHundredToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("C", converter.convert(100));
+    }
+    
+    @Test
+    public void convertThreeNintyNineToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("CCCXCIX", converter.convert(399));
+    }
 }
