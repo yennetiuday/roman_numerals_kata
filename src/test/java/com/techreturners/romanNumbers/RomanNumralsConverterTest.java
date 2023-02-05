@@ -89,9 +89,7 @@ class RomanNumralsConverterTest {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("CCCXCIX", converter.convert(399));
     }
-    
 
-    
     @Test
     public void convertFourHundredToNumeral() {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
@@ -108,5 +106,23 @@ class RomanNumralsConverterTest {
     public void convertEightNintyNineToNumeral() {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("DCCCXCIX", converter.convert(899));
+    }
+
+    @Test
+    public void convertNineHundredToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("CM", converter.convert(900));
+    }
+    
+    @Test
+    public void convertThousandToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("M", converter.convert(1000));
+    }
+    
+    @Test
+    public void convertThousandNintyNineToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("MXCIX", converter.convert(1099));
     }
 }
