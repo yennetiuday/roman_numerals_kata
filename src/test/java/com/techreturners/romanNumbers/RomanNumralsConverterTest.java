@@ -53,4 +53,22 @@ class RomanNumralsConverterTest {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("XXXIX", converter.convert(39));
     }
+    
+    @Test
+    public void convertFortyToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("XL", converter.convert(40));
+    }
+    
+    @Test
+    public void convertFiftyToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("L", converter.convert(50));
+    }
+    
+    @Test
+    public void convertEightyNineToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("LXXXIX", converter.convert(89));
+    }
 }
