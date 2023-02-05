@@ -89,4 +89,24 @@ class RomanNumralsConverterTest {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("CCCXCIX", converter.convert(399));
     }
+    
+
+    
+    @Test
+    public void convertFourHundredToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("CD", converter.convert(400));
+    }
+    
+    @Test
+    public void convertFiveHundredToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("D", converter.convert(500));
+    }
+    
+    @Test
+    public void convertEightNintyNineToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("DCCCXCIX", converter.convert(899));
+    }
 }
