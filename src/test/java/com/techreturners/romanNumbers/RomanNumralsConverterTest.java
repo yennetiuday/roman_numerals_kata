@@ -47,4 +47,10 @@ class RomanNumralsConverterTest {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("IX", converter.convert(9));
     }
+    
+    @Test
+    public void convertThirtyNineToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("XXXIX", converter.convert(39));
+    }
 }
