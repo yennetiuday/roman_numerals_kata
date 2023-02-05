@@ -31,6 +31,12 @@ class RomanNumralsConverterTest {
     }
     
     @Test
+    public void convertEightToNumeral(){
+        RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("VIII", converter.convert(8));
+    }
+    
+    @Test
     public void convertTenToNumeral() {
     	RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("X", converter.convert(10));
