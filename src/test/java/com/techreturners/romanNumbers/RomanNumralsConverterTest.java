@@ -29,4 +29,16 @@ class RomanNumralsConverterTest {
         RomanNumralsConverter converter = new RomanNumralsConverter();
         assertEquals("IV", converter.convert(4));
     }
+    
+    @Test
+    public void convertTenToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("X", converter.convert(10));
+    }
+    
+    @Test
+    public void convertNineToNumeral() {
+    	RomanNumralsConverter converter = new RomanNumralsConverter();
+        assertEquals("IX", converter.convert(9));
+    }
 }
